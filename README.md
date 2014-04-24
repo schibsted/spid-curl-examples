@@ -3,7 +3,7 @@
 This repo contains working examples for using the SPiD API straight
 from the command line with cURL.
 
-### [./getting-started.sh](getting-started.sh)
+### [getting-started.sh](getting-started.sh)
 
 This minimal example fetches the `/endpoints` endpoint, which returns
 a description of all available endpoints.
