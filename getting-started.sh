@@ -1,4 +1,4 @@
-server=https://stage.payment.schibsted.no
+server=https://identity-pre.schibsted.com
 client_id=$1
 secret=$2
 response=$(
