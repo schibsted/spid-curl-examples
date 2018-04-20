@@ -6,7 +6,7 @@ response=$(
     curl --silent -X POST -d "client_id=$client_id&client_secret=$secret&grant_type=client_credentials" $server/oauth/token
     ###
 )
-access_token=$(echo $response | sed -En 's/.*access_token":"([a-z0-9]+).*/\1/pg')
+access_token=$(echo $response | sed -En 's/.*access_token":"([^"]+).*/\1/pg')
 
 echo "OAuth access token: $access_token"
 
